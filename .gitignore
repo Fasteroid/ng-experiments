@@ -23,6 +23,7 @@
 # Miscellaneous
 **/.angular/
 **/.sass-cache/
+**/package-lock.json
 
 # System files
 .DS_Store
