@@ -10,5 +10,21 @@ import { interval, Observable } from 'rxjs';
     imports: [AsyncPipe]
 })
 export class AppComponent {
-    protected bruh: Observable<number> = interval(1000);
+    protected bruh = interval(1000); // observable
+
+    protected zone_bait = 0;
+
+    constructor() {
+        window.setInterval(() => { // does nothing, but will it trigger zone?
+            console.log('bruh');
+            this.zone_bait++;
+        }, 1000);
+
+        window.setTimeout( () => {
+            window.setInterval(() => { // does nothing, but will it trigger zone?
+                console.log('moment');
+                this.zone_bait++;
+            }, 500);
+        }, 1000)
+    }
 }
