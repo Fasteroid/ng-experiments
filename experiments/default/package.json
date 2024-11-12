@@ -1,0 +1,11 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "ng test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
