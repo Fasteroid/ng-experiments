@@ -1,27 +1,18 @@
-# Asdf
+# ng-experiments
+<br/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+A collection of random shit I wanted to learn about
+<br/>
+<br/>
 
-## Development server
+## Setting up (please read)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This monorepo provides each experiment the same installation of Angular 16 to share.  
+Additional dependencies are left to each experiment to manage separately.
 
-## Code scaffolding
+This means you may need to `npm install` twice—once in the root of this repo, and **again** in the root of *&lt;insert experiment here&gt;*  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Testing
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Navigate to an experiment and run `ng serve` for a dev server
+- Navigate to an experiment and run `ng test` to execute its unit tests if any exist
