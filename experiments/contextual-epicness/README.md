@@ -6,7 +6,7 @@ But actual documentation on how to design your own? &nbsp;Not exactly obvious.
 This experiment shows how to do that.
 
 ```html
-<div *ngFor="let context, let num = number">
+<div *customContext="let context, let num = number">
     {{context}} {{num}}
 </div>
 ```
