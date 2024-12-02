@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { interval } from 'rxjs';
+import { Conduit } from 'rxjs-conduit/vanilla';
 
 // this component is much nicer on the zoneless branch
 
@@ -12,6 +13,8 @@ export class AppComponent {
     protected bruh = interval(1000); // this also triggers zone since it calls the detoured setTimeout internally
 
     protected zone_bait = 0;
+
+    x = new Conduit();
 
     constructor() {
         window.setInterval(() => { // does nothing that would cause a change, but still triggers zone.js
